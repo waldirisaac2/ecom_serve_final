@@ -1,0 +1,43 @@
+<form [formGroup]="clienteForm" (ngSubmit)="save()">
+<nav>
+  
+  <button type="button" class="btn btn-secondary"routerLink="/clienteform" routerLinkActive="active">Nuevo Titulo</button>
+  <br>
+  <br>
+</nav>
+<table class="table " >
+    <thead class="table table-secondary"> 
+      <tr>
+          <th scope="row">#</th>
+          <td>Especialidad/carrera</td>
+          <td>Centro de Estudios</td>
+          <td>Nivel</td>
+          <td>SUNEDU</td>
+          <td>Egreso</td>
+          <td>Archivo</td>
+          <td>Opc</td>
+      </tr>
+    </thead>
+    <tbody *ngFor="let d of list">
+      <tr class="table-hover">
+          <td><span>{{ d.id }}</span></td>
+          <td><span>{{ d.espe }}</span></td>
+          <td> <span>{{ d.centro_estudios }}</span></td>
+          <td><span>{{ d.nivel }}</span></td>
+          <td> <span>{{ d.sunedu }}</span></td>
+          <td><span>{{ d.egreso }}</span></td>
+          <td><button><img src="" alt=""></button></td>  
+          <td><span><button (click)="delete(d.id)"class="btn btn-secondary">Eliminar Titulo</button></span>
+          </td>
+      </tr>
+    </table>
+</form>
+
+
+
+
+  
+    
+
+
+  

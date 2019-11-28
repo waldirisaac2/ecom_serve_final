@@ -1,0 +1,94 @@
+
+<div>
+    <div>
+            
+    </div>
+<form [formGroup]="clienteForm" (ngSubmit)="save()">
+    
+        <table class="table table-active">
+                <thead>
+                  <tr>
+                    <th scope="col"><h2><b>Registro de Titulos</b></h2>
+                    
+                    </th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-hover">
+                   
+                    <td><label>
+                            <b>Especialidad/Carrera:</b>
+                            <br>
+                            <input type="text" formControlName="espe" name="espe" id="espe" required>
+                           
+                        </label>
+                        <img width="40" alt="Angular Logo" src="assets/img/t.png"></td>
+                  </tr>
+                  <tr class="table-hover">
+                       
+                        <td><label>
+                                <b>Centro de Estudios :</b>
+                                <br>
+                                <input type="text" formControlName="centro_estudios" name="centro_estudios" id="centro_estudios" required>
+                            </label>
+                            <img width="40" alt="Angular Logo" src="assets/img/co.png"></td>
+                      </tr>
+                      <tr class="table-hover">
+                           
+                            <td> <label>
+                                    <b>Nivel :</b>
+                                    <br>
+                                    <input type="text" formControlName="nivel" name="nivel" id="nivel" required>
+                                </label>
+                                <img width="40" alt="colegio Logo" src="assets/img/n.png"></td>
+                          </tr>
+                          <tr class="table-hover">
+                               
+                                <td><label>
+                                        <b>SUNEDU :</b>
+                                    <br>
+                                    <input type="date" formControlName="sunedu" name="sunedu" id="sunedu" required>
+                                </label>
+                                <img width="40" alt="Angular Logo" src="assets/img/ca.jpg"></td>
+                              </tr>
+                                  <tr class="table-hover">
+                                       
+                                        <td><label>
+                                                <b>EGRESO :</b>
+                                            <br>
+                                            <input type="date" formControlName="egreso" name="egreso" id="egreso" required>
+                                        </label>
+                                        <img width="40" alt="Angular Logo" src="assets/img/ca.jpg"></td>
+                                      </tr>
+                                      <tr class="table-hover">
+                                       
+                                        <td><label>
+                                                <b>INGRESO :</b>
+                                            <br>
+                                            <input type="date" formControlName="ingreso" name="ingreso" id="ingreso" required>
+                                        </label>
+                                        <img width="40" alt="Angular Logo" src="assets/img/ca.jpg"></td>
+                                      </tr>
+                                      <tr class="table-hover">
+                                       
+                                        <td><label>
+                                                <b>Empresa :</b>
+                                            <br>
+                                            <input type="text" formControlName="empresa" name="empresa" id="empresa" required>
+                                        </label>
+                                        <img width="40" alt="Angular Logo" src="assets/img/ca.jpg"></td>
+                                      </tr>
+                  </tbody>
+                  </table>
+   
+    <div class="form-group">
+            <label for="exampleInputFile">Foto Del Titulo</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">Seleccione su Titulo .</small>
+          </div>
+          <button type="submit" [disabled]="!clienteForm.valid" class="btn btn-primary">Agregar Titulo</button>
+        </form>
+        
+
+</div>

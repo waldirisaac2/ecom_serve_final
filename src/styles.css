@@ -1,0 +1,31 @@
+.navbar-collapse collapse{
+    border-radius: 10px;
+}
+#body{
+    background-color: aqua;
+
+}
+@media (min-width: 0px) and (max-width:600px){
+	.container{
+		flex: 40%;
+	}
+	.ocultar{
+		display: none;
+	}
+	#logo{
+		margin-left: 60%;
+	}
+
+}
+
+@media (min-width: 601px) and (max-width:991px){
+	.container{
+		flex: 30%;
+	}
+	.ocultar{
+		display: none;
+	}
+	#logo{
+		margin-left: 70%;
+	}
+}
